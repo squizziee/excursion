@@ -1,0 +1,120 @@
+body {
+    background: #fff;
+    width: 100%;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.preload-screen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preload-screen-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preload-screen-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    min-width: 500px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #222222;
+}
+
+.preload-screen-btn {
+    padding: 0;
+    display: flex;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 50px;
+    width: 250px;
+    height: 60px;
+    text-transform: uppercase;
+    background: #29bb89;
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.preload-screen-btn .text {
+    height: 100%;
+    width: 190px;
+    transition: .2s background ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preload-screen-btn .symbol {
+    font-size: 30px;
+    height: 100%;
+    width: 60px;
+    transition: .2s background ease-in-out;
+    border-left: .5px solid rgba(0, 0, 0, .075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preload-screen-btn .symbol i {
+    transform: translate(-2.5px);
+}
+
+.preload-screen-btn .text:hover,
+.preload-screen-btn .symbol:hover {
+    background: #68deb6;
+}
+
+/* .preload-screen-btn::after {
+    content: '';
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 100%);
+    position: absolute;
+    z-index: 99;
+    width: 250px;
+    height: 250px;
+    background: #ffc400;
+    border-radius: 50%;
+    transition: .3s transform ease-in-out;
+}
+
+.preload-screen-btn::before {
+    content: 'Продолжить';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preload-screen-btn:hover {
+    background: #ffc400;
+}
+
+.preload-screen-btn:hover::after {
+    transform: translate(-50%, -50%);
+} */
